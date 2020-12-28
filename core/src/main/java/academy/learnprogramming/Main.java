@@ -10,6 +10,7 @@ public class Main {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
     private static final String CONFIG_LOCATION = "beans.xml";
+
     public static void main(String[] args) {
         log.info("Guess The Number Game");
 
@@ -17,6 +18,7 @@ public class Main {
         ConfigurableApplicationContext context
                 = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
+        // get number generator bean from context (container)
         NumberGenerator numberGenerator
                 = context.getBean("numberGenerator", NumberGenerator.class);
 
@@ -25,6 +27,12 @@ public class Main {
 
         // log generated number
         log.info("number = {}", number);
+
+        // get game bean from context (container)
+        Game game = context.getBean(Game.class);
+
+        // call reset method
+        game.reset();
 
         // close context (container)
         context.close();
