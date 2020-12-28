@@ -26,6 +26,9 @@ public class Main {
         // log generated number
         log.info("number = {}", number);
 
+        // close context (container)
+        context.close();
+
 
     }
 }
