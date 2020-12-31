@@ -1,9 +1,6 @@
 package academy.learnprogramming.console;
 
-import academy.learnprogramming.config.AppConfig;
-import academy.learnprogramming.Game;
-import academy.learnprogramming.MessageGenerator;
-import academy.learnprogramming.NumberGenerator;
+import academy.learnprogramming.config.GameConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -18,28 +15,28 @@ public class Main {
 
         // create context (container)
         ConfigurableApplicationContext context
-                = new AnnotationConfigApplicationContext(AppConfig.class);
+                = new AnnotationConfigApplicationContext(GameConfig.class);
 
-        // get number generator bean from context (container)
-        NumberGenerator numberGenerator
-                = context.getBean(NumberGenerator.class);
-
-        // call method next() to get a random number
-        int number = numberGenerator.next();
-
-        // log generated number
-        log.info("number = {}", number);
-
-        // get game bean from context (container)
-        Game game = context.getBean(Game.class);
-
-        MessageGenerator messageGenerator
-                = context.getBean(MessageGenerator.class);
-        log.info("getMainMessage= {}", messageGenerator.getMainMessage());
-        log.info("getResultMessage= {}", messageGenerator.getResultMessage());
-
-//        // call reset method
-//        game.reset();
+//        // get number generator bean from context (container)
+//        NumberGenerator numberGenerator
+//                = context.getBean(NumberGenerator.class);
+//
+//        // call method next() to get a random number
+//        int number = numberGenerator.next();
+//
+//        // log generated number
+//        log.info("number = {}", number);
+//
+//        // get game bean from context (container)
+//        Game game = context.getBean(Game.class);
+//
+//        MessageGenerator messageGenerator
+//                = context.getBean(MessageGenerator.class);
+//        log.info("getMainMessage= {}", messageGenerator.getMainMessage());
+//        log.info("getResultMessage= {}", messageGenerator.getResultMessage());
+//
+////        // call reset method
+////        game.reset();
 
         // close context (container)
         context.close();
