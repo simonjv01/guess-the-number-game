@@ -1,4 +1,4 @@
-package academy.learnprogramming;
+package academy.learnprogramming.service;
 
 public interface GameService {
     public boolean isGameOver();
