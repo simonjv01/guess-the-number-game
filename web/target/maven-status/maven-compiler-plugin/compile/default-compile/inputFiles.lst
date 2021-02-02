@@ -1,3 +1,8 @@
 /Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/util/ViewNames.java
 /Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/config/WebConfig.java
+/Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/util/AttributeNames.java
 /Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/WebMain.java
+/Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/controller/GameController.java
+/Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/util/GameMappings.java
+/Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/service/GameServiceImpl.java
+/Users/simonvargas/Projects/guess-the-number-game/web/src/main/java/academy/learnprogramming/service/GameService.java
