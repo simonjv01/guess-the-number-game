@@ -1,6 +1,6 @@
 package academy.learnprogramming.util;
 
-public class GameMappings {
+public final class GameMappings {
 
     // == constants ==
     public static final String PLAY = "play";
